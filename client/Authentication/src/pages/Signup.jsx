@@ -34,7 +34,7 @@ export default function Signup() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/signup",
+        "https://userauthentication-1.onrender.com/signup",
         { ...inputValue },
         { withCredentials: true }
       );

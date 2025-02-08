@@ -16,7 +16,7 @@ export default function Home() {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3000",
+        "https://userauthentication-1.onrender.com/",
         {},
         { withCredentials: true }
       );
