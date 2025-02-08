@@ -1,10 +1,10 @@
 const User = require("../Models/UserModel.js");
 const { createSecretToken } = require("../util/SecretToken.js");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs"); 
 
 
 // Signup Controller
-module.exports.Signup = async (req, res,next) => {
+module.exports.Signup = async (req, res, next) => {
     try {
         const { email, username, password, createdAt } = req.body;
         const existingUser = await User.findOne({ email });
@@ -30,7 +30,7 @@ module.exports.Signup = async (req, res,next) => {
 
 // Login Controller
 
-module.exports.Login = async (req, res,next) => {
+module.exports.Login = async (req, res, next) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
