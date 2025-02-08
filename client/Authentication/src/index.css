@@ -1,0 +1,126 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-size: 1rem;
+  color: #656262;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8a55f;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form_container {
+  /* border: 1px solid black; */
+  background-color: rgb(224, 143, 86);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form_container label {
+  font-size: 1rem;
+  color: #380808;
+}
+.form_container input {
+  border: none;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.form_container button {
+  background-color: rgb(199, 96, 27);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  box-shadow: 8px 8px 24px 0px rgba(204, 137, 50, 1);
+}
+
+.home_page {
+  height: 100vh;
+  width: 100vw;
+  background: #d8a55f;
+  color: rgb(126, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 1rem;
+}
+.home_page span {
+  color: rgb(161, 35, 35);
+}
+
+.home_page button {
+  background-color: rgb(139, 90, 26);
+  color: #e6b8b8;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  transition: ease-in 0.3s;
+  border: none;
+  box-shadow: 8px 8px 24px 0px rgba(204, 137, 50, 1);
+}
+.home_page button:hover {
+  background-color: rgb(185, 116, 26);
+}
+
+@media only screen and (max-width: 1200px) {
+  .home_page {
+    font-size: 1.5rem;
+  }
+  .home_page button {
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+  }
+}
