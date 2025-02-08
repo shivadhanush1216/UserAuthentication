@@ -1,4 +1,4 @@
-### Use rAuthentication
+### User Authentication
 
 A web application that provides secure user authentication features, including signup, login, and logout functionalities.
 
