@@ -32,7 +32,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://userauthentication-1.onrender.com/login",
+        `${import.meta.env.VITE_API_URL}/login`,
         {
           ...inputValue,
         },

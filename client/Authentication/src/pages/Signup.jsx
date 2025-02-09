@@ -34,7 +34,7 @@ export default function Signup() {
 
     try {
       const { data } = await axios.post(
-        "https://userauthentication-1.onrender.com/signup",
+        `${import.meta.env.VITE_API_URL}/signup`,
         { ...inputValue },
         { withCredentials: true }
       );

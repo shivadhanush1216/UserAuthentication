@@ -16,7 +16,7 @@ export default function Home() {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "https://userauthentication-1.onrender.com/",
+        `${import.meta.env.VITE_API_URL}/`,
         {},
         { withCredentials: true }
       );
