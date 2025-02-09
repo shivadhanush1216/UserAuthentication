@@ -34,7 +34,7 @@ export default function Signup() {
 
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/signup`,
+        `${import.meta.env.VITE_API_URL}/signup`, // Ensure this line is correct
         { ...inputValue },
         { withCredentials: true }
       );
